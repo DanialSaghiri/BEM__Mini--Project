@@ -1,0 +1,125 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: me;
+    src: url('font/Vazir-Medium.eot');
+    src: url('font/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Vazir-Medium.woff2') format('woff2'),
+        url('font/Vazir-Medium.woff') format('woff'),
+        url('font/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    font-family: me;
+    direction: rtl;
+}
+.continer{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.Header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(225deg, #10A9DA 0%, #92E5FF 100%); ;
+}
+.Navigation{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    gap: 15px;
+}
+.Button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.Button--Customise1{
+    border: 2px solid white ;
+    background-color:#53b9d9;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.Button--Customise1:hover{
+    color: black;
+    background-color: white;
+    transform: rotateZ(360deg);
+}
+.Button--Customise2{
+    border: 2px solid rgba(0, 0, 255, 0.8);
+    color:#53b9d9;
+    background-color: rgba(0, 0, 255, 0.8);
+    transition: 0.5s ease-in-out;
+}
+.Button--Customise2:hover{
+    background-color: transparent;
+    color: white;
+    transform: rotateY(45deg) rotateX(360deg);
+}
+.Menu{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.Menu_Items{
+    font-size: 20px;
+}
+.Menu_Link{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.Menu_Link:hover{
+    color: black;
+    opacity: 0.5;
+}
+.Navigation__Logo{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+.AboutWebSite{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Imag--Customise1{
+    width: 400px;
+    height: 400px;
+}
+.Imag--Customise2{
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    left: -3%;
+}
+.AboutWebSite__Information{
+    padding: 40px 0 ;
+}
+.Header__Items{
+    color: white;
+    padding: 15px 0;
+    font-size: 30px;
+}
+.Header__Items--font{
+    font-size: 50px;
+}
+.Button--Customise3{
+    border: 2px solid white;
+    background-color: white;
+    color:#53b9d9;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.Button--Customise3:hover{
+    background-color:#53b9d9 ;
+    color: white;
+    transform: scale(1.2) translateY(20px) rotate(360deg);
+}
